@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Eviction Alert System</h1>
-</body>
-</html>
+{% extends "templates/base.html" %}
+{% block body %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>Eviction Alert</h1>
+    <p><a href="{{ login_url }}">Login</a></p>
+  </div>
+</div>
+{% endblock %}
