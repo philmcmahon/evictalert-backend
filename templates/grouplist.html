@@ -1,0 +1,14 @@
+{% extends "templates/base.html" %}
+{% block body %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>Your Groups</h1>
+    <p><a href="{{ logout_url }}">Logout</a></p>
+    <ul>
+    {% for alert_group in alert_groups %}
+    <li> <a href="/alertgroups/{{ alert_group.key.id() }}">{{ alert_group.name }}</a> </li>
+    {% endfor  %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
